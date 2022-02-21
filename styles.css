@@ -1,0 +1,97 @@
+html{
+  height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+
+}
+
+body{
+  margin: 0;
+  width:100%;
+  overflow-x: hidden;
+  background-color: black;
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+
+.frontcover{
+  position: absolute;
+  overflow: hidden;
+  z-index: -5;
+  height: 100vh;
+  width:100vw;
+  margin:0;
+  padding:0;
+}
+
+.frontimage{
+  width: 100vw;
+  height: auto;
+}
+.frontimage1{
+  width: auto;
+  height: 100vh;
+}
+
+
+
+
+#text {
+position: absolute;
+top: 10%;
+color: white;
+font-family: 'Open Sans', sans-serif;
+font-size: 3rem;
+}
+
+#cursor {
+  position: absolute;
+	width: 3px;
+	height: 50px;
+	background-color: white;
+  opacity: 0;
+
+}
+
+
+.logo{
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
+
+@media (max-width: 800px){
+  .frontimage{
+opacity: 0;
+  }
+  .frontimage1{
+opacity: 1;
+  }
+
+  #text {
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  }
+
+
+
+}
+
+
+@media (min-width: 800px){
+  .frontimage{
+opacity: 1;
+  }
+  .frontimage1{
+opacity: 0;
+  }
+}
